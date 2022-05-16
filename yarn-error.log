@@ -1,0 +1,63 @@
+Arguments: 
+  /home/hungnv/.nvm/versions/node/v14.15.4/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /home/hungnv/.nvm/versions/node/v14.15.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  14.15.4
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/hungnv/codegym/node-express-typeorm-product-manager/package.json: Unexpected token } in JSON at position 405
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "express-typeorm-manager-product",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "clean": "rimraf dist/*",
+      "tsc": "tsc",
+      "build": "npx tsc",
+      "start": "node dist/index.js",
+      "m:g": "yarn build && typeorm migration:generate -n",
+      "m:run": "yarn build && typeorm migration:run",
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@types/mysql": "^2.15.21",
+      "npm-run-all": "^4.1.5",
+      "rimraf": "^3.0.2",
+      "tsc": "^2.0.4",
+      "tsc-watch": "^5.0.3"
+    },
+    "dependencies": {
+      "express": "^4.18.1",
+      "mysql": "^2.18.1",
+      "reflect-metadata": "^0.1.13",
+      "typedi": "^0.8.0",
+      "typeorm": "^0.2.45",
+      "typeorm-typedi-extensions": "^0.2.3",
+      "typescript": "^4.6.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

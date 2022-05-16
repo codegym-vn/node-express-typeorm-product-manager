@@ -5,10 +5,14 @@ module.exports = {
   username: "root",
   password: "123456",
   database: "dbTest",
-  synchronize: true,
+  synchronize: false,
   logger: "advanced-console",
   logging: "all",
   cache: true,
   dropSchema: false,
-  entities: ["dist/src/models/*.js"],
+  entities: ["dist/src/entity/*.js"],
+  migrations: [
+    "dist/src/migrations/*.js"
+ ],
+ cli: { migrationsDir: 'src/migrations' }
 };

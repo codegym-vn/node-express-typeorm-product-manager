@@ -15,7 +15,4 @@ export class Product {
   @Column({ type: "varchar" })
   public name: string;
 
-  @Column()
-  public price: number;
-
 }

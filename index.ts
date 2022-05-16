@@ -1,5 +1,5 @@
 import * as typeorm from "typeorm";
-import { Product } from "./src/models/Product";
+import { Product } from "./src/entity/Product";
 
 const express = require('express');
 
